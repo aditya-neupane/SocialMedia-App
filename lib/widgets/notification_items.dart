@@ -7,7 +7,6 @@ import 'package:social_media_app/utils/firebase.dart';
 import 'package:social_media_app/widgets/view_notification_details.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
-import 'package:social_media_app/widgets/indicators.dart';
 
 class ActivityItems extends StatefulWidget {
   final ActivityModel? activity;

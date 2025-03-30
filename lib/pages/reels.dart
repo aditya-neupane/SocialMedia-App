@@ -259,7 +259,7 @@ class _WoobleReelsState extends State<WoobleReels> {
   buildLikeButton(PostModel post, PostsViewModel viewModel) {
     return StreamBuilder(
       stream: likesRef
-          .where('postId', isEqualTo: post!.postId)
+          .where('postId', isEqualTo: post.postId)
           .where('userId', isEqualTo: firebaseAuth.currentUser!.uid)
           .snapshots(),
       builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {

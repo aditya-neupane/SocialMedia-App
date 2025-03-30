@@ -9,7 +9,6 @@ import 'package:social_media_app/view_models/status/home/home_view_model.dart';
 import 'package:social_media_app/view_models/status/status_view_model.dart';
 import 'package:social_media_app/view_models/theme/theme_view_model.dart';
 import 'package:social_media_app/view_models/user/user_view_model.dart';
-import 'package:social_media_app/utils/constants.dart';
 
 List<SingleChildWidget> providers = [
   ChangeNotifierProvider(create: (_) => RegisterViewModel()),

@@ -53,13 +53,6 @@ class Constants {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: false,
     iconTheme: const IconThemeData(color: Colors.white),
-    colorScheme: ColorScheme.fromSwatch(
-      accentColor: darkAccent,
-    ).copyWith(
-      secondary: darkAccent,
-      brightness: Brightness.dark,
-    ),
-    backgroundColor: darkBG,
     primaryColor: darkPrimary,
     scaffoldBackgroundColor: darkBG,
     textSelectionTheme: TextSelectionThemeData(
@@ -83,7 +76,12 @@ class Constants {
         fontSize: 20.0,
         fontWeight: FontWeight.w700,
       ),
-    ),
+    ), colorScheme: ColorScheme.fromSwatch(
+      accentColor: darkAccent,
+    ).copyWith(
+      secondary: darkAccent,
+      brightness: Brightness.dark,
+    ).copyWith(background: darkBG),
   );
 
   static List<T> map<T>(List list, Function handler) {

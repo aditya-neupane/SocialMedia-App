@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:geocoding/geocoding.dart';
+// import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
@@ -53,7 +53,7 @@ class PostsViewModel extends ChangeNotifier {
   String? id;
 
   //locators
-  Placemark? placemark;
+  // Placemark? placemark;
   Position? position;
 
   //files
@@ -80,18 +80,13 @@ class PostsViewModel extends ChangeNotifier {
   }
 
   setPost(PostModel post) {
-    if (post != null) {
-      description = post.description;
-      imgLink = post.mediaUrl;
-      location = post.location;
-      edit = true;
-      edit = false;
-      notifyListeners();
-    } else {
-      edit = false;
-      notifyListeners();
+    description = post.description;
+    imgLink = post.mediaUrl;
+    location = post.location;
+    edit = true;
+    edit = false;
+    notifyListeners();
     }
-  }
 
   setUsername(String val) {
     print('SetName $val');
@@ -187,10 +182,10 @@ class PostsViewModel extends ChangeNotifier {
     } else {
       position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high);
-      List<Placemark> placemarks = await placemarkFromCoordinates(
-          position!.latitude, position!.longitude);
-      placemark = placemarks[0];
-      location = " ${placemarks[0].locality}, ${placemarks[0].country}";
+      // List<Placemark> placemarks = await placemarkFromCoordinates(
+      //     position!.latitude, position!.longitude);
+      // placemark = placemarks[0];
+      // location = " ${placemarks[0].locality}, ${placemarks[0].country}";
       locationTEC.text = location!;
       print(location);
     }

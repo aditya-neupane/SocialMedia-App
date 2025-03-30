@@ -1,18 +1,13 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:provider/provider.dart';
 import 'package:social_media_app/chats/recent_chats.dart';
 import 'package:social_media_app/models/post.dart';
 import 'package:social_media_app/screens/notification.dart';
 import 'package:social_media_app/utils/constants.dart';
-import 'package:social_media_app/utils/firebase.dart';
 import 'package:social_media_app/view_models/status/home/home_view_model.dart';
-import 'package:social_media_app/widgets/indicators.dart';
 import 'package:social_media_app/widgets/story_widget.dart';
 import 'package:social_media_app/widgets/userpost.dart';
 

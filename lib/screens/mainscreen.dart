@@ -1,11 +1,9 @@
 import 'package:animations/animations.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:social_media_app/components/fab_container.dart';
 import 'package:social_media_app/pages/reels.dart';
-import 'package:social_media_app/screens/notification.dart';
 import 'package:social_media_app/pages/profile.dart';
 import 'package:social_media_app/pages/search.dart';
 import 'package:social_media_app/pages/feeds.dart';
