@@ -17,19 +17,19 @@ class Constants {
   static Color darkBG = Color(0xff2B2B2B);
 
   static ThemeData lightTheme = ThemeData(
-    backgroundColor: lightBG,
+    // backgroundColor: lightBG,
     primaryColor: lightPrimary,
     textSelectionTheme: TextSelectionThemeData(
       cursorColor: lightAccent,
     ),
     scaffoldBackgroundColor: lightBG,
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: BottomAppBarThemeData(
       elevation: 0,
-      color: lightBG,
+      // color: lightBG,
     ),
     appBarTheme: AppBarTheme(
       elevation: 0.0,
-      backgroundColor: lightBG,
+      // backgroundColor: lightBG,
       iconTheme: const IconThemeData(color: Colors.black),
       toolbarTextStyle: GoogleFonts.nunito(
         color: Colors.black,
@@ -52,22 +52,23 @@ class Constants {
     colorScheme: ColorScheme.fromSwatch(
       accentColor: darkAccent,
     ).copyWith(
+      background: darkBG,
       secondary: darkAccent,
       brightness: Brightness.dark,
     ),
-    backgroundColor: darkBG,
+    // backgroundColor: darkBG,
     primaryColor: darkPrimary,
     scaffoldBackgroundColor: darkBG,
     textSelectionTheme: TextSelectionThemeData(
       cursorColor: darkAccent,
     ),
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: BottomAppBarThemeData(
       elevation: 0,
-      color: darkBG,
+      // color: darkBG,
     ),
     appBarTheme: AppBarTheme(
       elevation: 0.0,
-      backgroundColor: darkBG,
+      // backgroundColor: darkBG,
       iconTheme: const IconThemeData(color: Colors.white),
       toolbarTextStyle: GoogleFonts.nunito(
         color: Colors.white,
